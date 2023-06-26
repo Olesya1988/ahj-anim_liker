@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  width: 100px;
+  height: 250px;  
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  width: 100px;
+  height: 250px;  
+  position: relative;
+}
+
+.button {
+  width: 80px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.like {  
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../pic/heart.png');
+  background-size: cover;
+  opacity: 0;
+  offset-rotate: 0deg;
+  animation: pulse 1000ms ease-in-out;   
+}
+
+.like1 {
+  offset-path: path('M30,0 C100,0 100,50 50,50 C0,50 0,100 50,100 C100,100 100,150 50,150 C0,150 0,200 50,200 C100,200 100,250 50,250C0,250 0,300 50,300C100,300 100,350 50,350C0,350 0,400 50,400C100,400 100,450 50,450C0,450 0,500 50,500C100,500 100,550 50,550');
+}
+
+.like2 {
+  offset-path: path('M40,0 C100,0 100,50 50,50 C0,50 0,100 50,100 C100,100 100,150 50,150 C0,150 0,200 50,200 C100,200 100,250 50,250C0,250 0,300 50,300C100,300 100,350 50,350C0,350 0,400 50,400C100,400 100,450 50,450C0,450 0,500 50,500C100,500 100,550 50,550');
+}
+
+.like3 {
+  offset-path: path('M50,0 C100,0 100,50 50,50 C0,50 0,100 50,100 C100,100 100,150 50,150 C100,200 100,250 50,250C0,250 0,300 50,300C100,300 100,350 50,350C0,350 0,400 50,400C100,400 100,450 50,450C0,450 0,500 50,500C100,500 100,550 50,550');
+}
+
+.like4 {
+  offset-path: path('M60,0 C100,0 100,50 50,50 C100,100 100,150 50,150 C0,150 0,200 50,200 C100,200 100,250 50,250C0,250 0,300 50,300C0,350 0,400 50,400C100,400 100,450 50,450C100,500 100,550 50,550');
+}
+
+.like:nth-of-type(10) {
+  offset-distance: 45%;
+  animation-delay: 100ms;
+}
+
+.like:nth-of-type(9) {
+  offset-distance: 40%;
+  animation-delay: 200ms;  
+}
+
+.like:nth-of-type(8) {
+  offset-distance: 35%;
+  animation-delay: 300ms;  
+}
+
+.like:nth-of-type(7) {
+  offset-distance: 30%;
+  animation-delay: 400ms; 
+}
+
+.like:nth-of-type(6) {
+  offset-distance: 25%;
+  animation-delay: 500ms;    
+}
+
+.like:nth-of-type(5) {
+  offset-distance: 20%;
+  animation-delay: 600ms;
+}
+
+.like:nth-of-type(4) {
+   offset-distance: 15%;
+  animation-delay: 700ms;
+}
+
+.like:nth-of-type(3) {
+  offset-distance: 10%;
+  animation-delay: 800ms;
+}
+
+.like:nth-of-type(2) {
+  offset-distance: 5%;
+  animation-delay: 900ms;  
+}
+
+.like:nth-of-type(1) {
+  offset-distance: 0;
+  animation-delay: 1000ms;
+} 
+
+@keyframes pulse {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
